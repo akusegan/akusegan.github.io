@@ -1,0 +1,8 @@
+/* line 4, ../../../sass/partial/base.scss */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}

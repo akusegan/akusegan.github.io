@@ -11,6 +11,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "assets/css/partial/reset.css",
+			"settings":
+			{
+				"buffer_size": 1528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/main.scss",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/main.css",
+			"settings":
+			{
+				"buffer_size": 1598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/partial/base.scss",
+			"settings":
+			{
+				"buffer_size": 50,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/partial/reset.scss",
+			"settings":
+			{
+				"buffer_size": 1165,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -36,6 +84,16 @@
 	},
 	"file_history":
 	[
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/assets/css/partial/base.css",
+		"/D/Design Resources/HTML5/html5-boilerplate-4.3.0/html5-boilerplate-4.3.0/index.html",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/index.html",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/assets/css/main.css",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/config.rb",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/sass/partial/reset.scss",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/sass/main.css",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/sass/print.scss",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/sass/screen.scss",
+		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/stylesheets/reset.css",
 		"/C/Users/mazlan.WEBLITE/Documents/GitHub/akusegan.github.io/repo.sublime-project",
 		"/D/Development/repository/index.html",
 		"/D/Development/repo/index.html",
@@ -74,8 +132,173 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "assets/css/partial/reset.css",
+					"settings":
+					{
+						"buffer_size": 1528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1281,
+								1281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/main.scss",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1238,
+								1238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/main.css",
+					"settings":
+					{
+						"buffer_size": 1598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/partial/base.scss",
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/partial/reset.scss",
+					"settings":
+					{
+						"buffer_size": 1165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1029,
+								1029
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -85,7 +308,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

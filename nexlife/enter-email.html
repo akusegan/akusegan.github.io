@@ -3,7 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="./web/assets/css/style.css">
     </head>
     <body>
@@ -14,20 +14,20 @@
             <div class="mx-box mx-color-bg">
                 
                 <h2 class="mx-title mx-color-title mx-bold">
-                    <i class="fas fa-passport mr-1"></i>
-                    Enter Passport Number
+                    <i class="fa fa-envelope mr-1"></i>
+                    Enter Email Address
                 </h2>
                 <div class="text-muted mx-subtitle">
-                    Insert your Passport details in the provided fields below
+                    Please enter your email address
                 </div>
-                <form method="POST" action="profile-enter-ic-red.html" class="mt-4">
-                    <input name="email_address" placeholder="Passport Number" class="form-control mx-input">
+                <form method="POST" action="/auth/register?login_challenge=625ab1e7cc0e4f448ef64202e3330ee4" class="mt-4">
+                    <input name="email_address" placeholder="Email Address" class="form-control mx-input">
                     <div class="row mx-input-action">
                         <div class="col pt-4">
                             <a href="#" onclick="javascript:history.go(-1)" class="btn mx-btn-tertiary mt-3 mx-btn-curve mx-shadow mx-bold">BACK</a>
                         </div>
-                        <div class="col text-right pt-4">
-                            <a href="" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
+                        <div class="col pt-4">
+                            <a href="enter-email-red.html" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
                                 NEXT
                             </a>
                         </div>
@@ -36,6 +36,9 @@
                         <input type="hidden" name="csrf" value="RIqanlblw5vRVujQHA8drxEdKKWl7MFp" />
                     </div>
                 </form>
+                <div class="mx-center">
+                    <a href="#" class="mx-color-secondary-link mx-subtitle mx-underline">Already have an account?</a>
+                </div>
                 <div class="mx-footer mt-4">
                     powered by
                     <img src="./web/assets/images/tm-logo.png" width="46" alt="TM.X Heimdall" title="TM.X Heimdall"/>

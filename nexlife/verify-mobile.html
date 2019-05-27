@@ -1,0 +1,73 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="./web/assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="mx-login-title">
+                <img src="./web/assets/images/tmx.png" width="38" class="mx-logo">
+            </div>
+            <div class="mx-box mx-color-bg">
+                
+                <h2 class="mx-title mx-color-title mx-bold">
+                    <i class="fas fa-mobile-alt mr-1"></i>
+                    Verify Mobile Number
+                </h2>
+                <div class="text-muted mx-subtitle">
+                    Enter the secret code 6-digit number that we sent via SMS</div>
+                <form method="POST" action="/auth/register?login_challenge=625ab1e7cc0e4f448ef64202e3330ee4" class="mt-4">
+                    <div class="form-row">
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                        <div class="col mx-mobile">
+                            <input name="tac" placeholder="" type="number" class="form-control mx-number">
+                        </div>
+                    </div>
+                    <div class="mx-center mx-pdg-tb-5">
+                        <small class="text-muted">Expires in 2 minutes</small>
+                    </div>
+                    <div class="mx-center mx-mg-b-20">
+                        <small class="text-muted">I didn't receive it. </small><a href="#" class="mx-color-secondary-link mx-subtitle mx-underline">Please Resend</a>
+                    </div>
+                    <div class="row mx-input-action">
+                        <div class="col">
+                            <a href="#" onclick="javascript:history.go(-1)" class="btn mx-btn-tertiary mt-3 mx-btn-curve mx-shadow mx-bold">BACK</a>
+                        </div>
+                        <div class="col">
+                            <a href="verify-mobile-red.html" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
+                                NEXT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="csrf" value="RIqanlblw5vRVujQHA8drxEdKKWl7MFp" />
+                    </div>
+                </form>
+                <!-- <div class="mx-center">
+                    <a href="#" class="mx-color-secondary-link mx-subtitle mx-underline">Skip this step</a>
+                </div> -->
+                <div class="mx-footer mt-4">
+                    powered by
+                    <img src="./web/assets/images/tm-logo.png" width="46" alt="TM.X Heimdall" title="TM.X Heimdall"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

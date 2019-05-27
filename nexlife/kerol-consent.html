@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/web/assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-title">
+                <img src="/web/assets/images/unifi-logo.svg">
+            </div>
+            <div class="box">
+                <h3>Permission</h3>
+                <div class="logodiv">
+                    <img src="{{ index . "avatar_url" }}" height="80" class="user-avatar">
+                    <img src="{{ index . "client_avatar_url" }}" height="80" class="client-avatar">
+                </div>
+                <p>Hi {{ index . "user" }}, application <strong>{{ index . "client_name" }}</strong> wants access resources on your behalf and to:</p>
+                <form method="POST" action="/auth/consent">
+                    {{ range $key, $value := index . "requested_scope" }}
+                    <div>
+                        {{ if (ne $value "openid") }}
+                            <input type="checkbox" value="{{ $value }}" name="grant_scope" checked /> 
+                            {{ if (eq $value "offline") }}
+                                Keep me logged in
+                            {{ else }}
+                                {{ $value }}
+                            {{ end }}
+                        {{ else }}
+                            <input type="checkbox" value="{{ $value }}" name="grant_scope" checked /> Profile
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    <input type="submit" name="submit" value="Allow access" class="btn btn-primary" />
+                    <input type="submit" name="submit" value="Deny access" class="btn btn-danger" />
+                    <!-- <div>
+                        <input type="checkbox" value="true" name="remember" />
+                        Remember me / Do not show this again
+                    </div> -->
+                    <input type="hidden" value="true" name="remember" />
+                    <input type="hidden" name="csrf" value="{{ index . "csrf" }}" />
+                    <input type="hidden" name="challenge" value="{{ index . "challenge" }}" />
+                </form>
+                <div class="footer">
+                    powered by
+                    <img src="/web/assets/images/tmx.png" width="30" alt="TM.X Heimdall" title="TM.X Heimdall"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

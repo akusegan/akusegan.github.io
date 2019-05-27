@@ -3,6 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="./web/assets/css/style.css">
     </head>
@@ -14,20 +15,29 @@
             <div class="mx-box mx-color-bg">
                 
                 <h2 class="mx-title mx-color-title mx-bold">
-                    <i class="fas fa-passport mr-1"></i>
-                    Enter Passport Number
+                    <i class="fas fa-store mr-1"></i>
+                    Enter Organisation Number
                 </h2>
                 <div class="text-muted mx-subtitle">
-                    Insert your Passport details in the provided fields below
+                    Kindly insert your Business Registration Number (BRN) in the provided field below.
                 </div>
                 <form method="POST" action="profile-enter-ic-red.html" class="mt-4">
-                    <input name="email_address" placeholder="Passport Number" class="form-control mx-input">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <select class="mx-input mx-subtitle mx-custom-select custom-select" id="inputGroupSelect01">
+                                <option selected>SELECT</option>
+                                <option value="1">BRN</option>
+                                <option value="2">NON-BRN</option>
+                              </select>
+                        </div>
+                    <input name="email_address" placeholder="Organisation Number" class="form-control mx-input">
+                    </div>
                     <div class="row mx-input-action">
                         <div class="col pt-4">
                             <a href="#" onclick="javascript:history.go(-1)" class="btn mx-btn-tertiary mt-3 mx-btn-curve mx-shadow mx-bold">BACK</a>
                         </div>
                         <div class="col text-right pt-4">
-                            <a href="" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
+                            <a href="org-number-confirm.html" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
                                 NEXT
                             </a>
                         </div>
@@ -42,5 +52,10 @@
                 </div>
             </div>
         </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

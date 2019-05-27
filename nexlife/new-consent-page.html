@@ -1,0 +1,118 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="./web/assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="mx-login-title">
+                <img src="./web/assets/images/tmx.png" width="38" class="mx-logo">
+            </div>
+            <div class="mx-box mx-color-bg">
+                <div class="mx-center">
+                    <div class="avatar-circle-s d-inline-block">
+                    <img class="s-avatar avatar" src="./web/assets/images/iron-man3.jpg">
+                    </div>
+                    <div class="avatar-circle-s d-inline-block">
+                    <img class="s-avatar avatar" src="./web/assets/images/client-logo.png">
+                    </div>
+                    <h2 class="mx-title mx-color-title mx-bold mt-4">
+                        ClientName would like to:
+                    </h2>
+                </div>
+                <form method="POST" action="/auth/consent" class="mt-2">
+                    <div class="accordion pt-2" id="accordion">
+                        <!-- Consent Item -->
+                        <div class="consent-card pt-3">
+                          <div class="row mx-scope-title" id="headingOne">
+                            <!-- <div class="col-1">
+                              <input type="checkbox" value="{{ $value }}" class="mt-1" id="OpenID">
+                            </div> -->
+                            <div class="col-11 p-0">
+                               <label class="mx-subtitle mx-3" for="OpenID">View your basic profile (Name, Nickname and Profile Picture)</label>
+                            </div>
+                            <div class="col-1">
+                              <div class="fa fa-info-circle consent-info mr-4" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></div>
+                              </div>   
+                          </div>                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body mx-subtitle text-muted p-2">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Consent Item End -->
+                        <!-- Consent Item -->
+                        <div class="consent-card pt-3">
+                            <div class="row mx-scope-title" id="headingTwo">
+                                <!-- <div class="col-1">
+                                    <input type="checkbox" value="{{ $value }}" class="mt-1" id="OpenID">
+                                </div> -->
+                                <div class="col-11 p-0">
+                                    <label class="mx-subtitle mx-3" for="OpenID">View your email address</label>
+                                </div>
+                                <div class="col-l">
+                                <div class="fa fa-info-circle consent-info mr-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></div>
+                                </div>   
+                            </div>                      
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body mx-subtitle text-muted p-2">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Consent Item End -->
+                        <!-- Consent Item -->
+                        <div class="consent-card pt-3">
+                            <div class="row mx-scope-title" id="headingThree">
+                                <!-- <div class="col-1">
+                                    <input type="checkbox" value="{{ $value }}" class="mt-1" id="OpenID">
+                                </div> -->
+                                <div class="col-11 p-0">
+                                    <label class="mx-subtitle mx-3" for="OpenID">View Identification number (NIRC/Passport/Business Registration Number)</label>
+                                </div>
+                                <div class="col-1">
+                                <div class="fa fa-info-circle consent-info mr-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></div>
+                                </div>   
+                            </div>                      
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body mx-subtitle text-muted p-2">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Consent Item End -->
+                        </div>
+                      <div class="row">
+                            <div class="col mx-subtitle text-center pt-4">By clicking Accept, you allow ClientName to use your information in accordance with respective <a href="#" class="mx-color-secondary-link">terms and conditions</a> and <a href="#" class="mx-color-secondary-link">privacy policy</a>.</div>
+                      </div>
+                      <div class="row">
+                        <div class="col text-center">
+                            <a href="#" onclick="javascript:history.go(-1)" class="btn mx-btn-tertiary mt-3 mx-btn-curve mx-shadow mx-bold">CANCEL</a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="incomplete-profile-new.html" class="btn mx-btn-primary mt-3 mx-btn-curve mx-shadow mx-bold">
+                                ACCEPT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" value="true" name="remember" />
+                        <input type="hidden" name="csrf" value="{{ index . "csrf" }}" />
+                        <input type="hidden" name="challenge" value="{{ index . "challenge" }}" />
+                    </div>
+                </form>
+                <div class="mx-footer mt-4">
+                    powered by
+                    <img src="./web/assets/images/tm-logo.png" width="46" alt="TM.X Heimdall" title="TM.X Heimdall"/>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
